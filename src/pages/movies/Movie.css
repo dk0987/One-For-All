@@ -1,0 +1,46 @@
+.movie {
+    padding-inline-start: 8rem;
+    padding-inline-end: 3rem;
+    padding-block-end: 3rem;
+}
+
+.generes-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 10%;
+    margin-block-start: 1rem;
+}
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .column-for-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .movie{
+        padding-inline: 1rem;
+        padding-block: 1rem;
+    }
+
+    .generes-box{
+        overflow-x: scroll;
+    }
+
+    
+  }
+
+
+@media (min-width : 64em) {
+    .row-for-desktop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+  
+  }

@@ -1,0 +1,12 @@
+.next-days{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    gap: 1.5rem;
+    width: 50%;
+    overflow-x: scroll;
+}
+
+.next-days::-webkit-scrollbar{
+    display: none;
+}

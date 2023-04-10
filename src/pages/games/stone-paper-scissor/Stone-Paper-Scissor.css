@@ -1,0 +1,15 @@
+.stone-paper-scissor {
+    height: 100vmin;
+}
+
+.stone-paper-scissor .game{
+    flex: 6;
+    padding-inline-start: 5rem;
+}
+
+.stone-paper-scissor .score{
+    flex: 4;
+    padding-inline: 5rem;
+    gap: 2.5rem;
+}
+

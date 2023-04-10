@@ -1,0 +1,9 @@
+.generes{
+    border-radius: 15px;
+    padding-inline: 10px;
+}
+
+
+.generes :hover{
+    cursor: pointer;
+  }

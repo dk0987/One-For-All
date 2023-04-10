@@ -1,0 +1,34 @@
+.news{
+    width: 100%;
+    padding-inline-end: 5rem;
+    padding-inline-start: 8rem;
+    padding-block-start: 3rem;
+}
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .column-for-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .news{
+        padding-inline: 1rem;
+        padding-block: 1rem;
+    }
+  
+  }
+
+
+@media (min-width : 64em) {
+    .row-for-desktop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+  
+  }

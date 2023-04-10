@@ -1,0 +1,15 @@
+.dictionary{
+    margin-block: 5%;
+    padding-inline-start: 8rem;
+    padding-inline-end: 3rem;
+}
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .dictionary{
+        margin-block-start: 2rem;
+        padding-inline: 1rem;
+    }
+  
+  }

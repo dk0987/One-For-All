@@ -1,0 +1,54 @@
+.movieList{
+    margin-block-start: 3rem;
+}
+
+.movieList .list-item{
+    width: 220px;
+    height: 320px;
+    cursor: pointer;
+}
+
+.list-item img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.rating {
+    gap: 5%;
+}
+
+.rating .rating-star {
+    width: 25px;
+    height: 25px;
+    gap: 10px;
+}
+
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .column-for-mobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .movieList{
+        margin-inline: 5rem;
+    }
+  
+  }
+
+
+@media (min-width : 64em) {
+    .row-for-desktop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+  
+  }

@@ -1,0 +1,24 @@
+.todays-current{
+}
+.current-info{
+}
+
+.extra-info{
+    margin-block-start: 1rem;
+    gap: 1.5rem;
+}
+
+.extra-info div {
+    gap: 1.5rem;
+}
+
+.extra-info div img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.wheather-image img{
+    height: 450px;
+    object-fit: contain;
+}

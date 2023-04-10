@@ -1,0 +1,47 @@
+.tic-tac-toe{
+    height: 100vmin;
+    padding-inline: 5rem;
+}
+
+.player1-score{
+    flex: 2;
+    gap: 2rem;
+}
+
+.game-buttons{
+    flex: 5;
+    padding-inline: 3rem;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 8rem;
+}
+
+.game img{
+    height: 60px;
+    width: 60px;
+}
+
+.buttons{
+    gap: 3rem;
+}
+
+.player2-score{
+    flex: 2;
+    gap: 2rem;
+
+}
+
+/* Utiliy classes */
+
+
+
+.game-option{
+    height: 20px;
+    width: 20px;
+    margin-inline-start: 1rem;
+}
+

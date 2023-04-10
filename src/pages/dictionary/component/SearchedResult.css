@@ -1,0 +1,22 @@
+.searchedResult {
+    width: 100%;
+    height: 70vmin;
+    overflow-y: scroll;
+    margin-block-start: 3%;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.875rem;
+}
+
+p {
+    font-weight: 800;
+}
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .searchedResult {
+        height: 170vmin;
+    }
+
+}

@@ -1,0 +1,17 @@
+.navbar{
+    width: 5%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.navbar nav{
+    gap: 50%;
+    padding-inline: 25%;
+    padding-block: 30%;
+}
+
+nav .navitem{
+    gap: 30%;
+}
+
