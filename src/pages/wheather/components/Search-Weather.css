@@ -2,7 +2,7 @@
     margin-block-start: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .search-weather input{
@@ -40,4 +40,27 @@
 .search-weather .searched-wheather div img{
     height: 150px;
     object-fit: contain;
+}
+
+/* Media query */
+
+@media (max-width : 64em) {
+
+    .search-weather input{
+        border-radius: 5%;
+        margin : 0;
+        width: 100%;
+        padding-inline-start: 1rem;
+    }
+    
+    .search-weather .searched-wheather{
+        margin-block-start: 0.5rem;
+        background-color: #82d3ed;
+        border-radius: 0.5rem;
+        padding-block: 1rem;
+        margin-inline: 0;
+    }
+    
+
+
 }

@@ -16,7 +16,7 @@ p {
 
 @media (max-width : 64em) {
     .searchedResult {
-        height: 170vmin;
+        height: 150vmin;
     }
 
 }

@@ -2,6 +2,7 @@
     flex: 3;
     max-height: 700px;
     overflow-y: scroll;
+    padding-block-end: 2rem;
 }
 
 .news-list .news-list-item{

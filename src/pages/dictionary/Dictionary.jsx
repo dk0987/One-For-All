@@ -8,9 +8,6 @@ function Dictionary() {
     const [query, setQuery] = useState("game");
     const [data, setData] = useState([])
 
-
-
-
     const handleSubmission = (e) => {
         const requestedOptions = {
             method: "GET",

@@ -3,7 +3,8 @@
 @media (max-width : 64em) {
 
     .wheather {
-        padding-block-start: 1.5rem;
+        width: 100%;
+        padding-block: 1.75rem;
         gap: 1rem;
     }
 

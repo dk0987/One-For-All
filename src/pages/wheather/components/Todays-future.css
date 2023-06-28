@@ -4,7 +4,7 @@
     grid-template: auto;
     gap: 1rem;
     margin-block-start: 1rem;
-    width : 100vmin;
+    width : 85vmin;
     overflow-x: scroll;
 }
 
@@ -31,12 +31,6 @@
 
 @media (max-width : 64em) {
     .todays-future{
-        padding-inline: 1rem;
+        
     }
-}
-
-
-@media (min-width : 64em) {
-   
-
 }
