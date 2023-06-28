@@ -58,7 +58,7 @@ function Wheather() {
                         getSearchedData(e)
                     }}
                     searchedData={searchedData} />
-                <h3 className='fs-300 semi-bold letter-spacing start'>Upcoming 3 Days</h3>
+                <h3 className='fs-300 semi-bold letter-spacing start upcoming-days-padding'>Upcoming 3 Days</h3>
                 <NextDays data={data} />
             </div>
         )

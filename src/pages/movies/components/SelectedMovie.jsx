@@ -5,7 +5,7 @@ import Star from './../../../image/star.png'
 function SelectedMovie({ data }) {
     return (
         <div className="selectedMovie ">
-            <img src={"https://image.tmdb.org/t/p/w1280/" + data.backdrop_path} alt="" />
+            <img src={"https://image.tmdb.org/t/p/w1280/" + data.backdrop_path} alt="" className='cover'/>
             <div className="poster | hide-for-mobile">
                 <img src={"https://image.tmdb.org/t/p/w500/" + data.poster_path} alt="" />
             </div>

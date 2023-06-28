@@ -4,11 +4,13 @@ import X from '../../../image/x.png'
 import O from '../../../image/0.png'
 import { useState } from 'react'
 
+import { Outlet, Link } from "react-router-dom";
+
 function Tic_Tac_Toe() {
 
     let [xTurn, setXTurn] = useState(true)
     let [boardSquareVisible, setBoardSquareVisible] = useState([false, false, false, false, false, false, false, false, false]);
-    let [turnVisible, setTurnVisible] = useState([-1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1]);
+    let [turnVisible, setTurnVisible] = useState([-1, -1, -1, -1, -1, -1, -1, -1, -1]);
     let [player1Win, setPlayer1Win] = useState(0)
     let [player1Loose, setPlayer1Loose] = useState(0)
     let [player2Win, setPlayer2Win] = useState(0)
@@ -57,11 +59,11 @@ function Tic_Tac_Toe() {
     const reset = () => {
         setXTurn(true);
         setBoardSquareVisible([false, false, false, false, false, false, false, false, false]);
-        setTurnVisible([-1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1])
+        setTurnVisible([-1, -1, -1, -1, -1, -1, -1, -1, -1])
     }
 
     return (
-        <div className="tic-tac-toe | bg-clr-500 flex fx-ai-c ">
+        <div className="tic-tac-toe |  row-for-desktop column-for-mobile ">
 
             <div className="player1-score | grid">
                 <div className="player-and-x | flex fx-ai-c fx-jc-c">
@@ -69,12 +71,12 @@ function Tic_Tac_Toe() {
                     <img src={X} alt="" className='game-option ' />
                 </div>
                 <div className="win | flex fx-ai-c fx-jc-sb">
-                    <h4 className='txt-clr-500 uppercase letter-spacing start'>Win</h4>
-                    <h6 className='txt-clr-500 bold uppercase letter-spacing end'>{player1Win}</h6>
+                    <h4 className=' uppercase letter-spacing start'>Win</h4>
+                    <h6 className=' bold uppercase letter-spacing end'>{player1Win}</h6>
                 </div>
                 <div className="loose | flex fx-ai-c fx-jc-sb">
-                    <h4 className='txt-clr-500 uppercase letter-spacing start'>Loose</h4>
-                    <h6 className='txt-clr-500 bold uppercase letter-spacing end'>{player1Loose}</h6>
+                    <h4 className=' uppercase letter-spacing start'>Loose</h4>
+                    <h6 className=' bold uppercase letter-spacing end'>{player1Loose}</h6>
                 </div>
             </div>
 
@@ -222,12 +224,15 @@ function Tic_Tac_Toe() {
                     </div>
                 </div>
 
-                <div className="buttons | grid">
+                <div className="buttons | grid hide-for-mobile ">
                     <button className='reset' onClick={() => {
                         reset()
                     }}>Reset</button>
-                    <button className='back'>Back</button>
+                    <Link to={"/dictionary"}>
+                        <button className='back'>Back</button>
+                    </Link>
                 </div>
+
             </div>
 
             <div className="player2-score | grid">
@@ -236,14 +241,23 @@ function Tic_Tac_Toe() {
                     <img src={O} alt="" className='game-option' />
                 </div>
                 <div className="win | flex fx-ai-c fx-jc-sb">
-                    <h4 className='txt-clr-500 uppercase letter-spacing start'>Win</h4>
-                    <h6 className='txt-clr-500 bold uppercase letter-spacing end'>{player2Win}</h6>
+                    <h4 className=' uppercase letter-spacing start'>Win</h4>
+                    <h6 className=' bold uppercase letter-spacing end'>{player2Win}</h6>
                 </div>
                 <div className="loose | flex fx-ai-c fx-jc-sb">
-                    <h4 className='txt-clr-500  uppercase letter-spacing start'>Loose</h4>
-                    <h6 className='txt-clr-500 bold uppercase letter-spacing end'>{player2Loose}</h6>
+                    <h4 className='  uppercase letter-spacing start'>Loose</h4>
+                    <h6 className=' bold uppercase letter-spacing end'>{player2Loose}</h6>
                 </div>
             </div>
+
+            <div className="mobile-buttons |  hide-for-desktop ">
+                    <button className='reset' onClick={() => {
+                        reset()
+                    }}>Reset</button>
+                    <Link to={"/dictionary"}>
+                        <button className='back'>Back</button>
+                    </Link>
+                </div>
 
         </div>
     )

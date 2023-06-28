@@ -6,7 +6,7 @@ import SearchWeather from './Search-Weather'
 
 function Todays({ data, query, handleQuery, searchedData }) {
     return (
-        <div className="todays | flex fx-jc-sa ">
+        <div className="todays | row-for-desktop column-for-mobile ">
             <TodaysCurrent data={data} />
             <div>
                 <h3 className='fs-300 semi-bold letter-spacing start'>Todays</h3>

@@ -1,17 +1,53 @@
-.navbar{
+.navbar {
     width: 5%;
     position: fixed;
     top: 0;
     bottom: 0;
 }
 
-.navbar nav{
+.navbar nav {
     gap: 50%;
-    padding-inline: 25%;
-    padding-block: 30%;
+    padding-inline: 20%;
+    padding-block: 20%;
 }
 
-nav .navitem{
+nav .navitem {
     gap: 30%;
 }
 
+/* Media query */
+
+@media (max-width : 64em) {
+
+    .hide-for-mobile {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 80;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .mobile-nav nav{
+        width: 100%;
+        padding-block: 2%;
+        background-color: whitesmoke;
+    }
+
+    .mobile-nav nav img{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+@media (min-width : 64em) {
+    .hide-for-desktop {
+        display: none;
+    }
+
+}

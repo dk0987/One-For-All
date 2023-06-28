@@ -12,15 +12,13 @@ import Dictionary from './pages/dictionary/Dictionary';
 import News from './pages/news/News';
 import Movie from './pages/movies/Movie';
 import Wheather from './pages/wheather/Wheather';
-import Game1 from './pages/games/stone-paper-scissor/Stone-Paper-Scissor'
 import Game2 from './pages/games/tic-tac-toe/Tic-Tac-Toe'
-import Home from './pages/landing/home/Home';
 
 function App() {
 
   const ProtectedRoute = ({ children }) => {
-    if (false) {
-      return <Navigate to={"/home"} />
+    if (true) {
+      return <Navigate to={"/dictionary"} />
     }
     return children;
   }
@@ -28,8 +26,7 @@ function App() {
   const Layout = () => {
     return (
       <div >
-        <div className='hide-for-mobile'>
-
+        <div className=''>
           <Navbar />
         </div>
         <div className=''>
@@ -67,20 +64,8 @@ function App() {
 
     },
     {
-      path: '/stone-paper-scissor',
-      element: <Game1 />
-    },
-    {
-      path: '/stone-paper-scissor',
-      element: <Game1 />
-    },
-    {
       path: '/tic-tac-toe',
       element: <Game2 />
-    },
-    {
-      path: "/home",
-      element: <Home />
     },
 
   ]);

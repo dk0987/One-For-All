@@ -38,6 +38,7 @@
 @media (min-width : 64em) {
     .row-for-desktop{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         gap: 2rem;

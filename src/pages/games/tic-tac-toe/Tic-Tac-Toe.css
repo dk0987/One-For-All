@@ -1,7 +1,4 @@
-.tic-tac-toe{
-    height: 100vmin;
-    padding-inline: 5rem;
-}
+
 
 .player1-score{
     flex: 2;
@@ -45,3 +42,76 @@
     margin-inline-start: 1rem;
 }
 
+/* Media query */
+
+@media (max-width : 64em) {
+    .column-for-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .tic-tac-toe{
+        object-fit: cover;
+        padding-inline: 1rem;
+        padding-block-start: 2rem;
+    }
+
+    .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-end: 1rem;
+    }
+
+    .hide-for-mobile{
+        display: none;
+    }
+
+    .mobile-buttons{
+        margin-block-start: 2.5rem;
+    }
+
+    .mobile-buttons .reset{
+        margin-block-end: 1rem;
+    } 
+
+    .mobile-buttons .back{
+        margin-block-end: 1rem;
+    }
+
+    .player1-score{
+        flex: 2;
+        gap:1rem;
+    }
+
+    .player2-score{
+        flex: 2;
+        gap: 1rem;
+    }
+
+    
+  }
+
+
+@media (min-width : 64em) {
+    .row-for-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .tic-tac-toe{
+        height: 100vmin;
+        padding-inline: 5rem;
+    }
+
+    .hide-for-desktop{
+        display: none;
+    }
+  
+  }
