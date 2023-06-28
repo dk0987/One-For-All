@@ -1,8 +1,5 @@
 import './Search-Weather.css'
 import '../../../index.css'
-import SearchBar from '../../dictionary/component/SearchBar'
-import Cloud from '../../../image/cloud.png'
-import Wheather from '../Wheather'
 
 function SearchWeather({ query, handleQuery, searchedData }) {
     if (searchedData <= 0 || searchedData.error != null ) {

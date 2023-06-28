@@ -4,7 +4,7 @@ import X from '../../../image/x.png'
 import O from '../../../image/0.png'
 import { useState } from 'react'
 
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Tic_Tac_Toe() {
 

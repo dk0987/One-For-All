@@ -1,8 +1,6 @@
 import './SearchedResult.css';
 import '../../../index.css';
 
-import { useState } from 'react';
-
 function SearchedResult({ data }) {
     // URL -> https://api.dictionaryapi.dev/api/v2/entries/en/{wor}
 

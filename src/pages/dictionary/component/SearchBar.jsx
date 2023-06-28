@@ -1,4 +1,4 @@
-import Home from '../../../image/home.png';
+
 import './SearchBar.css';
 import '../../../index.css';
 

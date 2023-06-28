@@ -7,7 +7,7 @@ import Game from '../image/game.png'
 import News from '../image/news.png'
 import Logo from '../image/logo.png'
 import { useState } from 'react'
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     let [selected, setSelected] = useState(0)

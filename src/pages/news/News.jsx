@@ -34,7 +34,7 @@ function News() {
 
     useEffect(() => {
        getData(page)
-    }, []);
+    });
 
     const getData = ((pageNumber) => {
         const requestedOptions = {

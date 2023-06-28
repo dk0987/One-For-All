@@ -42,7 +42,7 @@ function Movie() {
 
     useEffect(() => {
         getData(genreIDs[0]);
-    }, []);
+    });
 
     const getData = ((genreID) => {
         const requestedOptions = {

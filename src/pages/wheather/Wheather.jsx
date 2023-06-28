@@ -14,7 +14,7 @@ function Wheather() {
     useEffect(() => {
         getData();
         getSearchedData(query)
-    }, []);
+    });
 
     const getData = (() => {
         const requestedOptions = {
