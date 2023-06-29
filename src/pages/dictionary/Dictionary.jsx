@@ -25,7 +25,7 @@ function Dictionary() {
 
     useEffect(() => {
         handleSubmission(query);
-    });
+    } , []);
 
     return (
         <div className="dictionary | grid">
