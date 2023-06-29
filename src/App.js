@@ -17,7 +17,7 @@ import Game2 from './pages/games/tic-tac-toe/Tic-Tac-Toe'
 function App() {
 
   const ProtectedRoute = ({ children }) => {
-    if (false) {
+    if (true) {
       return <Splash />
     }
     return children;
