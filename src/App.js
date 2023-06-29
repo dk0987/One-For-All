@@ -3,7 +3,6 @@ import './App.css';
 import './index.css'
 import {
   createBrowserRouter,
-  Navigate,
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
@@ -12,13 +11,14 @@ import Dictionary from './pages/dictionary/Dictionary';
 import News from './pages/news/News';
 import Movie from './pages/movies/Movie';
 import Wheather from './pages/wheather/Wheather';
+import Splash from './pages/splash/Splash'
 import Game2 from './pages/games/tic-tac-toe/Tic-Tac-Toe'
 
 function App() {
 
   const ProtectedRoute = ({ children }) => {
-    if (false) {
-      return <Navigate to={"/dictionary"} />
+    if (true) {
+      return <Splash />
     }
     return children;
   }

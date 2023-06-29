@@ -48,13 +48,11 @@ function Movie() {
         const requestedOptions = {
             method: "GET",
         };
-        console.log("dgs")
 
         fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&region=${region[randomInteger(0, 1)]}&with_genres=${genreID}&page=${randomInteger(1, 50)}`, requestedOptions)
             .then(response => response.json())
             .then((result) => {
                 setData(shuffleArray(result.results))
-                console.log(result);
                 setLoadingList(false);
             })
     })

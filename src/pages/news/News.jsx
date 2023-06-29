@@ -37,6 +37,7 @@ function News() {
     });
 
     const getData = ((pageNumber) => {
+        
         const requestedOptions = {
             method: "GET",
         };
