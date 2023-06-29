@@ -2,15 +2,15 @@ import './Splash.css'
 import '../../index.css'
 import Logo from '../../image/logo.png'
 import { useEffect } from 'react'
-import { Link } from "react-router-dom";
+import {
+    Navigate,
+  } from 'react-router-dom';
 
 function Splash() {
 
     useEffect(() => {
         setTimeout(() => {
-            <Link to={"/dictionary"}>
-                <button className='back'>Back</button>
-            </Link>
+            <Navigate to={"/dictionary"} />
         }, 1000);
     }, [])
 
