@@ -18,13 +18,17 @@ import Game2 from './pages/games/tic-tac-toe/Tic-Tac-Toe'
 function App() {
 
   const ProtectedRoute = ({ children }) => {
-    if(true){
-      <Navigate to={"/splash"} />
+
+    var splashVisible = localStorage.getItem("splash")
+    console.log(splashVisible);
+    if(!splashVisible){
+      return <Navigate to={"/splash"} />
     }
     return children;
   }
 
   const Layout = () => {
+    localStorage.setItem("splash", null)
     return (
       <div >
         <div className=''>
