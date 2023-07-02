@@ -4,6 +4,7 @@ import './index.css'
 import {
   createBrowserRouter,
   Outlet,
+  Navigate,
   RouterProvider,
 } from 'react-router-dom';
 import Navbar from './components/navbar';
@@ -18,7 +19,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (true) {
-      return <Splash />
+      <Navigate to={"/splash"} />
     }
     return children;
   }
@@ -67,6 +68,10 @@ function App() {
       path: '/tic-tac-toe',
       element: <Game2 />
     },
+    {
+      path : '/splash',
+      element : <Splash />
+    }
 
   ]);
 

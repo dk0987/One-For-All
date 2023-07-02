@@ -19,7 +19,7 @@ function NavBar() {
                 <nav className=' grid '>
 
                     <div className="logo | txt-clr-300 fs-500">
-                        <Link to={"/home"}>
+                        <Link to={"/"}>
                             <img src={Logo} alt="" />
                         </Link>
                     </div>
