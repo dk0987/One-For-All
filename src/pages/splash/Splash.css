@@ -1,6 +1,22 @@
-.splash{
-}
 
 .splash img{
     height: 50%;
+    padding-inline: 5rem;
 }
+
+/* Media query */
+
+@media (max-width : 64em) {
+    .splash{
+        height: 100vmax;
+    }
+    
+  }
+
+
+@media (min-width : 64em) {
+    .splash{
+        height: 100vmin;
+    }
+    
+  }
