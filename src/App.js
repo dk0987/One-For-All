@@ -21,14 +21,14 @@ function App() {
 
     var splashVisible = localStorage.getItem("splash")
     console.log(splashVisible);
-    if(!splashVisible){
+    if(splashVisible === null){
       return <Navigate to={"/splash"} />
     }
+    localStorage.setItem("splash", null)
     return children;
   }
 
   const Layout = () => {
-    localStorage.setItem("splash", null)
     return (
       <div >
         <div className=''>
