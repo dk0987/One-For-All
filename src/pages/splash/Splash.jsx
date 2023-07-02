@@ -11,7 +11,7 @@ function Splash() {
     useEffect(() => {
         setTimeout(() => {
             <Navigate to={"/dictionary"} />
-        }, 1000);
+        }, 5000);
     }, [])
 
 
