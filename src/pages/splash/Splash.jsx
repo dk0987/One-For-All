@@ -12,11 +12,8 @@ function Splash() {
     var navigate = useNavigate()
 
     useEffect(() => {
-        console.log("Started");
 
         setTimeout(() => {
-            console.log("Timer");
-            localStorage.setItem('splash', true);
             setLoading(false)
         }, 5000);
 

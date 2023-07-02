@@ -7,6 +7,7 @@ import {
   Navigate,
   RouterProvider,
 } from 'react-router-dom';
+import { useState } from 'react';
 import Navbar from './components/navbar';
 import Dictionary from './pages/dictionary/Dictionary';
 import News from './pages/news/News';
@@ -17,14 +18,13 @@ import Game2 from './pages/games/tic-tac-toe/Tic-Tac-Toe'
 
 function App() {
 
-  const ProtectedRoute = ({ children }) => {
+  var [splashLoaded , setSplashLoaded] = useState(false)
 
-    var splashVisible = localStorage.getItem("splash")
-    console.log(splashVisible);
-    if(splashVisible === null){
+  const ProtectedRoute = ({ children }) => {
+    if(!splashLoaded){
+      setSplashLoaded(true)
       return <Navigate to={"/splash"} />
     }
-    localStorage.setItem("splash", null)
     return children;
   }
 
