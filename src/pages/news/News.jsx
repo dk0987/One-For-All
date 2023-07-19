@@ -52,7 +52,7 @@ function News() {
 
 
 
-    if (!loading) {
+    if (!loading && data.length !== 0 ) {
         return (
             <div className="news | column-for-mobile row-for-desktop ">
                 <SelectedNews 
